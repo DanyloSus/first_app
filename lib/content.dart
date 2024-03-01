@@ -51,9 +51,10 @@ class _ContentState extends State<Content> {
 }
 
 class Texts {
+  Texts(this._firstTexts, this._secondTexts);
+  
   int _step = 0;
 
-  Texts(this._firstTexts, this._secondTexts);
   List<String> _firstTexts;
   List<String> _secondTexts;
 
