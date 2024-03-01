@@ -5,7 +5,6 @@ import "dart:math";
 const textStyle = TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 16);
 
 class Content extends StatefulWidget {
-
   const Content({
     super.key,
   });
@@ -54,11 +53,18 @@ class _ContentState extends State<Content> {
 class Texts {
   int _step = 0;
 
-  List<String> firstTexts = [""];
-  List<String> secondTexts = [""];
+  Texts(this._firstTexts, this._secondTexts);
+  List<String> _firstTexts;
+  List<String> _secondTexts;
 
   int get step => _step;
+
+  List<String> get firstTexts => _firstTexts;
+  List<String> get secondTexts => _secondTexts;
+
   set step(newStep) => _step = newStep;
 
-  Texts(this.firstTexts, this.secondTexts);
+  set firstTexts(newTexts) => _firstTexts = newTexts;
+  set secondTexts(newTexts) => _secondTexts = newTexts;
+
 }
