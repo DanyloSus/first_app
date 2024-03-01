@@ -15,7 +15,10 @@ class Content extends StatefulWidget {
 }
 
 class _ContentState extends State<Content> {
-  Texts texts = Texts(["Danylo", "Empat", "#0056B9", "Я", "У мене"], ["Sushko", "Tech", "#FFD800", "Вася Пупкін", "все вийшло"]);
+  Texts texts = Texts(
+    ["Danylo", "Empat", "#0056B9", "Я", "Я ось", "У мене"], 
+    ["Sushko", "Tech", "#FFD800", "Вася Пупкін", "усе змінив", "все вийшло"]
+  );
 
   void _updateStep() {
     setState(() {
