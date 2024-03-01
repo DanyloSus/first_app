@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Background(gradientColors: [Colors.black87, Colors.white10])
+        body: Background(gradientColors: [Colors.black87, Colors.black54])
     )
     );
   }

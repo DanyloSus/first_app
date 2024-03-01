@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 
+import "package:first_app/content.dart";
+
 class Background extends StatelessWidget {
   const Background({required this.gradientColors, super.key});
 
@@ -14,7 +16,7 @@ class Background extends StatelessWidget {
           begin: Alignment.topLeft, 
           end: Alignment.bottomRight
           )
-      ), child: const Center(child: Text("Check"),),
+      ), child: const Center(child: Content(),),
     );
   }
 }
