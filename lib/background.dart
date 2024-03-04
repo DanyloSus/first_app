@@ -10,13 +10,14 @@ class Background extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      decoration: BoxDecoration(gradient:
-        LinearGradient(
-          colors: gradientColors, 
-          begin: Alignment.topLeft, 
-          end: Alignment.bottomRight
-          )
-      ), child: const Center(child: Content(),),
+      decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: gradientColors,
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight)),
+      child: const Center(
+        child: Content(),
+      ),
     );
   }
 }

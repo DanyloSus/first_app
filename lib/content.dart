@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import "dart:math";
 
-const textStyle = TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 16);
+const textStyle =
+    TextStyle(color: Colors.white, fontWeight: FontWeight.w500, fontSize: 16);
 
 class Content extends StatefulWidget {
   const Content({
@@ -14,10 +15,8 @@ class Content extends StatefulWidget {
 }
 
 class _ContentState extends State<Content> {
-  Texts texts = Texts(
-    ["Danylo", "Empat", "#0056B9", "Я", "Я ось", "У мене"], 
-    ["Sushko", "Tech", "#FFD800", "Вася Пупкін", "усе змінив", "все вийшло"]
-  );
+  Texts texts = Texts(["Danylo", "Empat", "#0056B9", "Я", "Я ось", "У мене"],
+      ["Sushko", "Tech", "#FFD800", "Вася Пупкін", "усе змінив", "все вийшло"]);
 
   void _updateStep() {
     setState(() {
@@ -52,7 +51,7 @@ class _ContentState extends State<Content> {
 
 class Texts {
   Texts(this._firstTexts, this._secondTexts);
-  
+
   int _step = 0;
 
   List<String> _firstTexts;
@@ -67,5 +66,4 @@ class Texts {
 
   set firstTexts(newTexts) => _firstTexts = newTexts;
   set secondTexts(newTexts) => _secondTexts = newTexts;
-
 }

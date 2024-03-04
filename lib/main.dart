@@ -8,13 +8,12 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   @override
   Widget build(context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Background(gradientColors: [Colors.black87, Colors.black54])
-    )
-    );
+        home: Scaffold(
+            body:
+                Background(gradientColors: [Colors.black87, Colors.black54])));
   }
 }
